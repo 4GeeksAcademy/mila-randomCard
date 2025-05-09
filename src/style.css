@@ -1,5 +1,38 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: radial-gradient(circle, #4e0622e7, #2c0035);
 }
+.Card{
+    width: 220px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 120px;
+    .top-suits{
+        font-size: 4rem;
+        position: absolute;
+        top: -15px;
+        left: 15px;
+    }
+    .number{
+        font-size: 5rem;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bottom-suits{
+        font-size: 4rem;
+        position: absolute;
+        bottom: -15px;
+        right: 15px;
+        rotate: 180deg;
+    }
+}
+.diamond,.heart{
+    color: red;
+}
+
